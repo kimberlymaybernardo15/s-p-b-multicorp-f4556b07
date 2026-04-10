@@ -1,4 +1,4 @@
-import { MonitorSmartphone, MapPin, ShieldCheck } from "lucide-react";
+import { MonitorSmartphone, MapPin, ShieldCheck, Crosshair, Share2 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const pillars = [
@@ -17,6 +17,24 @@ const pillars = [
     title: "Reputation Optimization",
     points: ["AI-powered sentiment analysis", "Brand monitoring & alerts", "Proactive reputation management"],
   },
+  {
+    icon: Crosshair,
+    title: "Precision Lead Generation & Outreach",
+    points: [
+      "Identifying and targeting \"ready-to-buy\" leads through AI-driven data mining",
+      "Optimized email and DM sequences that nurture prospects into customers",
+      "Aligning outreach with the latest Generative Engine Optimization trends for 2026",
+    ],
+  },
+  {
+    icon: Share2,
+    title: "Social Media Management",
+    points: [
+      "Consistent, high-impact presence across LinkedIn, Facebook, and Instagram",
+      "AI-driven content calendars that keep your brand relevant 24/7",
+      "Professional interaction management that turns followers into brand advocates",
+    ],
+  },
 ];
 
 export default function RoadmapSection() {
@@ -24,8 +42,8 @@ export default function RoadmapSection() {
     <section id="services" className="py-24 relative">
       <div className="section-divider mb-24" />
       <div className="container mx-auto px-6">
-        <SectionHeading title="Digital Growth Roadmap" subtitle="Three pillars powering your market dominance" />
-        <div className="grid md:grid-cols-3 gap-8">
+        <SectionHeading title="Digital Growth Roadmap" subtitle="Five pillars powering your market dominance" />
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pillars.map((p, i) => (
             <Pillar key={p.title} {...p} delay={`${i * 0.15}s`} />
           ))}

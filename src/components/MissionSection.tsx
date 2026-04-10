@@ -12,7 +12,7 @@ export default function MissionSection() {
           </div>
           <div className="glass-card p-8 md:p-12">
             <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-              SPB MultiCorp is an eco-conscious holding company currently building advanced digital marketing and AI services. Our long-term mission is to create a sustainable conglomerate that actively reduces our carbon footprint and protects Mother Nature. We are committed to responsible growth. Our future divisions will include wildland firefighting and land restoration, clean health food imports, equine breeding and training, and additional sustainable ventures — all built with environmental responsibility at their core.
+              SPB MultiCorp is an eco-conscious holding company currently building advanced digital marketing and AI services. Our long-term mission is to create a sustainable conglomerate that actively reduces our carbon footprint and protects Mother Nature. We are committed to responsible growth. Our future divisions will include wildland firefighting and land restoration, clean health food imports, and additional sustainable ventures — all built with environmental responsibility at their core.
             </p>
           </div>
           <p className="text-center text-lg font-heading metal-text font-semibold tracking-wide mt-8">
