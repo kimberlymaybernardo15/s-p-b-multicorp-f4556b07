@@ -26,7 +26,7 @@ export default function Footer() {
           <div>
             <h4 className="font-heading text-sm font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              {["Home", "About", "Services", "Leadership", "Contact"].map((l) => (
+              {["Home", "About", "Services", "Strategy", "Leadership", "Contact"].map((l) => (
                 <li key={l}>
                   <button onClick={() => l === "Home" ? window.scrollTo({ top: 0, behavior: "smooth" }) : document.getElementById(l.toLowerCase())?.scrollIntoView({ behavior: "smooth" })} className="text-muted-foreground hover:text-foreground transition-colors">
                     {l}
