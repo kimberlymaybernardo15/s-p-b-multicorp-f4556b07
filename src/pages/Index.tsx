@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import MissionSection from "@/components/MissionSection";
 import RoadmapSection from "@/components/RoadmapSection";
 import LeadershipSection from "@/components/LeadershipSection";
-import SustainabilitySection from "@/components/SustainabilitySection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -15,7 +14,6 @@ export default function Index() {
       <MissionSection />
       <RoadmapSection />
       <LeadershipSection />
-      <SustainabilitySection />
       <ContactSection />
       <Footer />
     </div>

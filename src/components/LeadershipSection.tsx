@@ -1,17 +1,18 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Award, Megaphone } from "lucide-react";
+import stevenPhoto from "@/assets/steven-photo.jpg";
+import kimPhoto from "@/assets/kim-photo.jpg";
 
 const leaders = [
   {
     name: "Steven R. Stapleton",
     role: "Founder & CEO",
-    icon: Award,
+    photo: stevenPhoto,
     bio: "A former wildland derrick man known as the \"Iron Cowboy,\" Steven brings decades of rugged, mission-critical experience to digital marketing. A NASA-affiliated responder and Marquis Who's Who honoree, he bridges raw tenacity with cutting-edge AI strategy to drive unparalleled results.",
   },
   {
     name: "Kim Bernardo",
     role: "Director of Digital Media & Partner",
-    icon: Megaphone,
+    photo: kimPhoto,
     bio: "A top-tier digital strategist with deep expertise in social media advertising, Kim architects high-converting campaigns across every major platform. Her data-driven approach and creative instincts make her the engine behind S-P-B MultiCorp's client growth.",
   },
 ];
@@ -41,20 +42,18 @@ function Heading() {
   );
 }
 
-function LeaderCard({ name, role, icon: Icon, bio, delay }: typeof leaders[0] & { delay: string }) {
+function LeaderCard({ name, role, photo, bio, delay }: typeof leaders[0] & { delay: string }) {
   const { ref, isVisible } = useScrollAnimation();
   return (
-    <div ref={ref} className={`glass-card p-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{ transitionDelay: delay }}>
-      <div className="flex items-center gap-4 mb-6">
-        <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-          <Icon className="text-primary" size={28} />
-        </div>
-        <div>
-          <h3 className="font-heading text-xl font-semibold text-foreground">{name}</h3>
-          <p className="text-sm text-primary font-medium">{role}</p>
-        </div>
+    <div ref={ref} className={`glass-card overflow-hidden transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{ transitionDelay: delay }}>
+      <div className="h-64 overflow-hidden">
+        <img src={photo} alt={name} className="w-full h-full object-cover object-top" />
       </div>
-      <p className="text-sm text-muted-foreground leading-relaxed">{bio}</p>
+      <div className="p-8">
+        <h3 className="font-heading text-xl font-semibold text-foreground">{name}</h3>
+        <p className="text-sm text-primary font-medium mb-4">{role}</p>
+        <p className="text-sm text-muted-foreground leading-relaxed">{bio}</p>
+      </div>
     </div>
   );
 }
