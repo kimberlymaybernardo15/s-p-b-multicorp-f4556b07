@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
-const links = ["Home", "About", "Mission", "Services", "Strategy", "Leadership", "Contact"];
+const links = ["Home", "About", "Services", "Strategy", "Leadership", "Contact"];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="flex items-center gap-2">
           <img src={logo} alt="S-P-B MultiCorp Logo" className="w-10 h-10 object-contain" />
-          <span className="font-heading text-xl font-bold metal-text tracking-wider">S-P-B MultiCorp</span>
+          <span className="sr-only">S-P-B MultiCorp</span>
         </button>
 
         <div className="hidden md:flex items-center gap-8">
