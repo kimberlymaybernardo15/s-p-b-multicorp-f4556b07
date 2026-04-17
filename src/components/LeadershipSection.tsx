@@ -8,7 +8,7 @@ const leaders = [
     name: "Steven R. Stapleton",
     role: "Founder & CEO",
     photo: stevenPhoto,
-    bio: "A former wildland derrick man known as the \"Iron Cowboy,\" Steven brings decades of rugged, mission-critical experience to digital marketing. A NASA-affiliated responder and Marquis Who's Who honoree, he bridges raw tenacity with cutting-edge AI strategy to drive unparalleled results.",
+    bio: "As CEO and founder of SPB MultiCorp, I bring a lifetime of hands-on leadership across nine diverse industries. From flipping burgers to running production lines, from wildland firefighting to oilfield rigs, from steel fabrication to warehouse operations, I've climbed every ladder from the bottom up. That grind shaped a maverick mindset that's always looking three moves ahead. Now I'm channeling that same relentless drive into building SPB MultiCorp as an eco-conscious digital marketing powerhouse, with eyes on a future of sustainable ventures that protect both people and planet. Master of turning real-world grit into scalable success.",
   },
   {
     name: "Bonnie Jackson",
@@ -20,7 +20,7 @@ const leaders = [
     name: "Kim Bernardo",
     role: "Director of Digital Media & Partner",
     photo: kimPhoto,
-    bio: "A top-tier digital strategist with deep expertise in social media advertising, Kim architects high-converting campaigns across every major platform. Her data-driven approach and creative instincts make her the engine behind S-P-B MultiCorp's client growth.",
+    bio: "As Director of Digital Media and partner at SPB MultiCorp, Kimberly brings creative vision and sharp execution to every campaign we run. With a keen eye for design and digital trends, she transforms ideas into compelling visual stories that actually cut through the noise. Her work doesn't just look good — it drives real results. Together we're building something that matters, both for our clients and for the future we're working toward.",
   },
 ];
 
@@ -53,7 +53,7 @@ function LeaderCard({ name, role, photo, bio, delay }: typeof leaders[0] & { del
   const { ref, isVisible } = useScrollAnimation();
   return (
     <div ref={ref} className={`glass-card overflow-hidden transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`} style={{ transitionDelay: delay }}>
-      <div className="h-64 overflow-hidden">
+      <div className="aspect-square overflow-hidden">
         <img src={photo} alt={name} className="w-full h-full object-cover object-top" />
       </div>
       <div className="p-8">
