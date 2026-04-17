@@ -20,7 +20,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 glass-nav">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="flex items-center gap-2">
-          <img src={logo} alt="S-P-B MultiCorp Logo" className="w-10 h-10 object-contain" />
+          <img src={logo} alt="S-P-B MultiCorp Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain" />
           <span className="sr-only">S-P-B MultiCorp</span>
         </button>
 
