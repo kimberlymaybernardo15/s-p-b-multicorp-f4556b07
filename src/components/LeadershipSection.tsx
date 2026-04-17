@@ -1,6 +1,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import stevenPhoto from "@/assets/steven-photo.jpg";
 import kimPhoto from "@/assets/kim-photo.jpg";
+import bonniePhoto from "@/assets/bonnie-photo.jpg";
 
 const leaders = [
   {
@@ -8,6 +9,12 @@ const leaders = [
     role: "Founder & CEO",
     photo: stevenPhoto,
     bio: "A former wildland derrick man known as the \"Iron Cowboy,\" Steven brings decades of rugged, mission-critical experience to digital marketing. A NASA-affiliated responder and Marquis Who's Who honoree, he bridges raw tenacity with cutting-edge AI strategy to drive unparalleled results.",
+  },
+  {
+    name: "Bonnie Jackson",
+    role: "Chief Operations Officer",
+    photo: bonniePhoto,
+    bio: "As Chief Operating Officer of SPB MultiCorp, Bonnie brings strong leadership and business acumen to the company. With a proven track record of leadership in every role she's held, she excels at organizing teams, creating efficient systems, and thinking big-picture while keeping operations running smoothly. Bonnie also owns and operates her own horse breeding and training business, giving her real-world experience building and running a company from the ground up. Her ability to manage multiple moving parts and think strategically makes her uniquely suited to help scale SPB MultiCorp as we expand into new divisions.",
   },
   {
     name: "Kim Bernardo",
@@ -22,7 +29,7 @@ export default function LeadershipSection() {
     <section id="leadership" className="py-24 brushed-metal-bg">
       <div className="container mx-auto px-6">
         <Heading />
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {leaders.map((l, i) => (
             <LeaderCard key={l.name} {...l} delay={`${i * 0.15}s`} />
           ))}
