@@ -4,6 +4,7 @@ import kimPhoto from "@/assets/kim-photo.jpg";
 import bonniePhoto from "@/assets/bonnie-photo.jpg";
 
 const leaders = [
+  // photoPosition lets us fine-tune cropping per leader so faces are framed consistently
   {
     name: "Steven R. Stapleton",
     role: "Founder & CEO",
