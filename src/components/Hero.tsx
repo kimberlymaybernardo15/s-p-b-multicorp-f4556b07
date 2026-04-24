@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220_13%_10%/0.7)] via-[hsl(220_13%_10%/0.5)] to-background" />
 
       <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">
-        <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-bold metal-text leading-tight mb-6 animate-fade-up">
+        <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight mb-6 animate-fade-up">
           The Future of Lead Generation
         </h1>
         <p className="text-lg md:text-xl text-[hsl(220_10%_85%)] max-w-2xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: "0.15s" }}>
