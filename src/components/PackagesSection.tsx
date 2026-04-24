@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Check } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import SignInPromptDialog from "./SignInPromptDialog";
+import PaymentDialog from "./PaymentDialog";
 
 const packages = [
   {
@@ -51,10 +51,10 @@ const packages = [
 export default function PackagesSection() {
   const { ref, isVisible } = useScrollAnimation();
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [selected, setSelected] = useState<string | undefined>();
+  const [selected, setSelected] = useState<typeof packages[0] | undefined>();
 
-  const handleGetStarted = (name: string) => {
-    setSelected(name);
+  const handleGetStarted = (pkg: typeof packages[0]) => {
+    setSelected(pkg);
     setDialogOpen(true);
   };
 
@@ -74,7 +74,13 @@ export default function PackagesSection() {
         </div>
       </div>
 
-      <SignInPromptDialog open={dialogOpen} onOpenChange={setDialogOpen} packageName={selected} />
+      <PaymentDialog
+        open={dialogOpen}
+        onOpenChange={setDialogOpen}
+        packageName={selected?.name}
+        price={selected?.price}
+        period={selected?.period}
+      />
     </section>
   );
 }
@@ -86,7 +92,7 @@ function PackageCard({
 }: {
   pkg: typeof packages[0];
   delay: string;
-  onGetStarted: (name: string) => void;
+  onGetStarted: (pkg: typeof packages[0]) => void;
 }) {
   const { ref, isVisible } = useScrollAnimation();
   return (
@@ -115,7 +121,7 @@ function PackageCard({
         ))}
       </ul>
       <button
-        onClick={() => onGetStarted(pkg.name)}
+        onClick={() => onGetStarted(pkg)}
         className={`w-full px-6 py-3 rounded-lg font-heading font-semibold transition-all ${pkg.highlighted ? "bg-primary text-primary-foreground electric-glow electric-glow-hover" : "metal-btn text-foreground"}`}
       >
         Get Started
