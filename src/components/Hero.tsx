@@ -20,8 +20,8 @@ export default function Hero() {
           <button onClick={() => scroll("contact")} className="px-8 py-4 rounded-lg bg-primary text-primary-foreground font-heading font-semibold text-base electric-glow electric-glow-hover">
             Get a Digital Audit
           </button>
-          <button onClick={() => scroll("mission")} className="metal-btn px-8 py-4 rounded-lg text-foreground font-heading font-semibold text-base">
-            Explore Our Mission
+          <button onClick={() => scroll("packages")} className="metal-btn px-8 py-4 rounded-lg text-foreground font-heading font-semibold text-base">
+            See Packages
           </button>
         </div>
       </div>
