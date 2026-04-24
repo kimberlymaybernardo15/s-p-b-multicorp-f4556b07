@@ -12,7 +12,7 @@ export default function Footer() {
               <h4 className="font-heading text-lg font-semibold metal-text">S-P-B MultiCorp</h4>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              AI-driven digital marketing agency and eco-conscious holding company. Built for growth. Rooted in purpose.
+              Advanced digital marketing agency and eco-conscious holding company. Built for growth. Rooted in purpose.
             </p>
           </div>
           <div>

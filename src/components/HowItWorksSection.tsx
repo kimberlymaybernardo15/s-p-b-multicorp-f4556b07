@@ -4,7 +4,7 @@ const steps = [
   {
     n: "01",
     title: "Discovery & Audit",
-    desc: "We start with a free digital audit — analyzing your current presence, competitors, and 2026 AI search readiness.",
+    desc: "We start with a free digital audit — analyzing your current presence, competitors, and 2026 Advanced search readiness.",
   },
   {
     n: "02",
@@ -14,7 +14,7 @@ const steps = [
   {
     n: "03",
     title: "Launch & Scale",
-    desc: "We go live, monitor performance, and continuously optimize lead flow, reputation, and AI visibility.",
+    desc: "We go live, monitor performance, and continuously optimize lead flow, reputation, and Advanced visibility.",
   },
 ];
 

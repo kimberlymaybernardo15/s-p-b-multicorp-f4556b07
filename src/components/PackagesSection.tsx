@@ -40,7 +40,7 @@ const packages = [
     features: [
       "Everything in Growth Package",
       "Advanced SEO & multi-channel social management",
-      "AI-driven outreach & nurture sequences",
+      "Advanced outreach & nurture sequences",
       "Dedicated strategist & priority support",
       "Custom integrations & analytics",
     ],
