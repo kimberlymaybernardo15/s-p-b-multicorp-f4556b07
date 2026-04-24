@@ -62,7 +62,8 @@
   }
 
   .light {
-    --background: 220 14% 93%;
+    /* Inverted dark mode: light surfaces, dark text */
+    --background: 220 20% 96%;
     --foreground: 220 30% 8%;
 
     --card: 0 0% 100%;
@@ -71,44 +72,76 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 30% 8%;
 
-    --primary: 215 65% 32%;
+    /* Eye-catching electric blue, dark on light for max contrast */
+    --primary: 215 90% 38%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 12% 88%;
-    --secondary-foreground: 220 30% 12%;
+    --secondary: 220 14% 88%;
+    --secondary-foreground: 220 30% 10%;
 
-    --muted: 220 13% 90%;
-    --muted-foreground: 220 18% 28%;
+    --muted: 220 16% 90%;
+    --muted-foreground: 220 20% 25%;
 
-    --accent: 220 13% 86%;
-    --accent-foreground: 220 30% 10%;
+    --accent: 215 90% 92%;
+    --accent-foreground: 215 90% 20%;
 
-    --destructive: 0 72% 48%;
+    --destructive: 0 75% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 82%;
-    --input: 220 13% 84%;
-    --ring: 215 60% 38%;
+    --border: 220 15% 78%;
+    --input: 220 15% 82%;
+    --ring: 215 90% 38%;
 
-    --chrome: 220 15% 38%;
-    --chrome-bright: 220 25% 22%;
-    --electric: 215 60% 38%;
-    --electric-glow: 215 65% 50%;
-    --slate-dark: 220 14% 90%;
-    --charcoal: 220 13% 88%;
+    /* Inverted metallic: dark chrome on light for readable metal-text */
+    --chrome: 220 25% 20%;
+    --chrome-bright: 220 35% 8%;
+    --electric: 215 90% 38%;
+    --electric-glow: 215 95% 55%;
+    --slate-dark: 220 20% 92%;
+    --charcoal: 220 16% 90%;
 
-    --glass-bg: 0 0% 100% / 0.75;
-    --glass-border: 220 15% 75% / 0.5;
-    --glass-highlight: 0 0% 100% / 0.6;
+    --glass-bg: 0 0% 100% / 0.8;
+    --glass-border: 220 20% 70% / 0.5;
+    --glass-highlight: 0 0% 100% / 0.7;
 
-    --sidebar-background: 220 14% 95%;
-    --sidebar-foreground: 220 25% 15%;
-    --sidebar-primary: 215 60% 38%;
+    --sidebar-background: 220 20% 97%;
+    --sidebar-foreground: 220 30% 10%;
+    --sidebar-primary: 215 90% 38%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 13% 86%;
-    --sidebar-accent-foreground: 220 25% 18%;
-    --sidebar-border: 220 13% 82%;
-    --sidebar-ring: 215 60% 38%;
+    --sidebar-accent: 215 90% 92%;
+    --sidebar-accent-foreground: 215 90% 20%;
+    --sidebar-border: 220 15% 78%;
+    --sidebar-ring: 215 90% 38%;
+  }
+
+  .light .metal-btn {
+    color: hsl(0 0% 100%);
+    background: linear-gradient(
+      135deg,
+      hsl(220, 25%, 30%) 0%,
+      hsl(220, 30%, 18%) 50%,
+      hsl(220, 25%, 25%) 100%
+    );
+    border-color: hsl(220 20% 40%);
+  }
+  .light .metal-btn:hover {
+    color: hsl(0 0% 100%);
+    background: linear-gradient(
+      135deg,
+      hsl(220, 25%, 22%) 0%,
+      hsl(220, 35%, 10%) 50%,
+      hsl(220, 25%, 18%) 100%
+    );
+    box-shadow: 0 0 18px hsla(215, 90%, 38%, 0.35);
+  }
+
+  .light .brushed-metal-bg {
+    background-image:
+      linear-gradient(135deg, hsla(220, 30%, 0%, 0.025) 25%, transparent 25%),
+      linear-gradient(225deg, hsla(220, 30%, 0%, 0.025) 25%, transparent 25%),
+      linear-gradient(315deg, hsla(220, 30%, 0%, 0.025) 25%, transparent 25%),
+      linear-gradient(45deg, hsla(220, 30%, 0%, 0.025) 25%, transparent 25%);
+    background-size: 4px 4px;
   }
 }
 
