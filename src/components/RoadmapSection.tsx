@@ -4,7 +4,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const pillars = [
   {
     icon: MonitorSmartphone,
-    title: "AI Web Design",
+    title: "Advanced Web Design",
     points: ["Conversion-focused architecture", "A/B testing & continuous optimization", "Mobile-first responsive builds"],
   },
   {
@@ -15,13 +15,13 @@ const pillars = [
   {
     icon: ShieldCheck,
     title: "Reputation Optimization",
-    points: ["AI-powered sentiment analysis", "Brand monitoring & alerts", "Proactive reputation management"],
+    points: ["Advanced sentiment analysis", "Brand monitoring & alerts", "Proactive reputation management"],
   },
   {
     icon: Crosshair,
     title: "Precision Lead Generation & Outreach",
     points: [
-      "Identifying and targeting \"ready-to-buy\" leads through AI-driven data mining",
+      "Identifying and targeting \"ready-to-buy\" leads through Advanced data mining",
       "Optimized email and DM sequences that nurture prospects into customers",
       "Aligning outreach with the latest Generative Engine Optimization trends for 2026",
     ],
@@ -31,7 +31,7 @@ const pillars = [
     title: "Social Media Management",
     points: [
       "Consistent, high-impact presence across LinkedIn, Facebook, and Instagram",
-      "AI-driven content calendars that keep your brand relevant 24/7",
+      "Advanced content calendars that keep your brand relevant 24/7",
       "Professional interaction management that turns followers into brand advocates",
     ],
   },

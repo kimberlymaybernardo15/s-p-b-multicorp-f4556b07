@@ -4,7 +4,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const items = [
   { icon: Rocket, title: "5-Day Deployment", desc: "Launch in a week, not months. Speed without sacrificing quality." },
   { icon: Smartphone, title: "Mobile-First Design", desc: "Built for the 60%+ of leads that arrive from mobile devices." },
-  { icon: Search, title: "Built-In SEO & GEO", desc: "Schema, fast load times, and AI search optimization from day one." },
+  { icon: Search, title: "Built-In SEO & GEO", desc: "Schema, fast load times, and Advanced search optimization from day one." },
   { icon: FileText, title: "Lead Capture Ready", desc: "Booking, quote, and callback forms wired up to start collecting leads." },
   { icon: Settings, title: "Integrates With Your Stack", desc: "Connects to your CRM, scheduling, and email so nothing slips through." },
   { icon: MapPin, title: "Local Search Optimized", desc: "Google Local Pack–ready and tuned for your service area." },

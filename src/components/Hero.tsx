@@ -6,7 +6,7 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <img src={heroBg} alt="Oregon wilderness with AI overlays" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover" />
+      <img src={heroBg} alt="Oregon wilderness with Advanced overlays" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
 
       <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">
@@ -14,7 +14,7 @@ export default function Hero() {
           The Future of Lead Generation
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: "0.15s" }}>
-          Bridging the gap between traditional SEO and 2026 AI search behavior through Generative Engine Optimization (GEO).
+          Bridging the gap between traditional SEO and 2026 Advanced search behavior through Generative Engine Optimization (GEO).
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
           <button onClick={() => scroll("contact")} className="px-8 py-4 rounded-lg bg-primary text-primary-foreground font-heading font-semibold text-base electric-glow electric-glow-hover">
