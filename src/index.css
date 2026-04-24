@@ -180,6 +180,7 @@
 
   .metal-btn {
     @apply relative overflow-hidden transition-all duration-300;
+    color: hsl(0 0% 100%);
     background: linear-gradient(
       135deg,
       hsl(220, 10%, 25%) 0%,
@@ -189,6 +190,7 @@
     border: 1px solid hsla(var(--glass-border));
   }
   .metal-btn:hover {
+    color: hsl(0 0% 100%);
     background: linear-gradient(
       135deg,
       hsl(220, 10%, 30%) 0%,
