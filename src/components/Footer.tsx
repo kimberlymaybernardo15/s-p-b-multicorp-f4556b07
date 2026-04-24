@@ -26,10 +26,19 @@ export default function Footer() {
           <div>
             <h4 className="font-heading text-sm font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              {["Home", "About", "Services", "Strategy", "Leadership", "Contact"].map((l) => (
-                <li key={l}>
-                  <button onClick={() => l === "Home" ? window.scrollTo({ top: 0, behavior: "smooth" }) : document.getElementById(l.toLowerCase())?.scrollIntoView({ behavior: "smooth" })} className="text-muted-foreground hover:text-foreground transition-colors">
-                    {l}
+              {[
+                { label: "Home", id: "home" },
+                { label: "Services", id: "services" },
+                { label: "About", id: "about" },
+                { label: "Why Us", id: "why-choose-us" },
+                { label: "Process", id: "how-it-works" },
+                { label: "Packages", id: "packages" },
+                { label: "Leadership", id: "leadership" },
+                { label: "Contact", id: "contact" },
+              ].map((l) => (
+                <li key={l.id}>
+                  <button onClick={() => l.id === "home" ? window.scrollTo({ top: 0, behavior: "smooth" }) : document.getElementById(l.id)?.scrollIntoView({ behavior: "smooth" })} className="text-muted-foreground hover:text-foreground transition-colors">
+                    {l.label}
                   </button>
                 </li>
               ))}
