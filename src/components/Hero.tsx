@@ -13,7 +13,7 @@ export default function Hero() {
         <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-bold metal-text leading-tight mb-6 animate-fade-up">
           The Future of Lead Generation
         </h1>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: "0.15s" }}>
+        <p className="text-lg md:text-xl text-[hsl(220_10%_85%)] max-w-2xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: "0.15s" }}>
           Bridging the gap between traditional SEO and 2026 Advanced search behavior through Generative Engine Optimization (GEO).
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
