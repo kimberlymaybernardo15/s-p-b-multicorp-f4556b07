@@ -8,6 +8,8 @@ const packages = [
     name: "Basic Package",
     tagline: "Essential growth tools to get found and chosen",
     price: "$997",
+    priceNote: "per month",
+    subNote: null as string | null,
     period: "monthly",
     features: [
       "Lead generation",
@@ -20,6 +22,8 @@ const packages = [
     name: "Advanced Package",
     tagline: "Most popular — website + ongoing growth",
     price: "$2,500",
+    priceNote: "to get started",
+    subNote: "Includes first month, then $997 per month",
     period: "to get started (includes first month), then $997/month",
     features: [
       "Advanced web design delivered in 5 days",
@@ -33,6 +37,8 @@ const packages = [
     name: "Plus Package",
     tagline: "Full-service search & market dominance",
     price: "$2,997",
+    priceNote: "to get started",
+    subNote: "Includes first month, then $997 per month",
     period: "to get started (includes first month), then $997/month",
     features: [
       "Everything in the Advanced Package",
@@ -102,9 +108,14 @@ function PackageCard({
       )}
       <h3 className="font-heading text-2xl font-bold text-foreground mb-1">{pkg.name}</h3>
       <p className="text-sm text-muted-foreground mb-6">{pkg.tagline}</p>
-      <div className="mb-6">
-        <span className="font-heading text-4xl font-bold metal-text">{pkg.price}</span>
-        <span className="text-sm text-muted-foreground ml-2">{pkg.period}</span>
+      <div className="mb-8 space-y-2">
+        <div className="flex items-baseline gap-2">
+          <span className="font-heading text-4xl font-bold metal-text leading-tight">{pkg.price}</span>
+          <span className="text-sm text-muted-foreground">{pkg.priceNote}</span>
+        </div>
+        {pkg.subNote && (
+          <p className="text-sm text-muted-foreground leading-relaxed">{pkg.subNote}</p>
+        )}
       </div>
       <ul className="space-y-3 mb-8 flex-1">
         {pkg.features.map((f) => (
