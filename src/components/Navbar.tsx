@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { useTheme } from "@/hooks/useTheme";
 
 const links: { label: string; id: string }[] = [
   { label: "Home", id: "home" },
@@ -14,6 +15,8 @@ const links: { label: string; id: string }[] = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+  const ThemeIcon = theme === "dark" ? Sun : Moon;
 
   const scroll = (id: string) => {
     if (id === "home") {
@@ -38,14 +41,30 @@ export default function Navbar() {
               {l.label}
             </button>
           ))}
+          <button
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            className="p-2 rounded-lg border border-border text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+          >
+            <ThemeIcon size={18} />
+          </button>
           <button onClick={() => scroll("packages")} className="px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-heading text-sm font-semibold electric-glow-hover electric-glow transition-all duration-300">
             Get Started
           </button>
         </div>
 
-        <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <button
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            className="p-2 rounded-lg border border-border text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <ThemeIcon size={18} />
+          </button>
+          <button className="text-foreground" onClick={() => setOpen(!open)}>
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {open && (
