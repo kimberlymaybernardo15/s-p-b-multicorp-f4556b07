@@ -7,14 +7,27 @@ export default function ContactSection() {
   const { ref, isVisible } = useScrollAnimation();
   const [loading, setLoading] = useState(false);
 
+  const RECIPIENT = "kbernardo@s-p-b-multicorp.com";
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+    const form = e.target as HTMLFormElement;
+    const data = new FormData(form);
+    const name = String(data.get("name") || "");
+    const email = String(data.get("email") || "");
+    const company = String(data.get("company") || "");
+    const message = String(data.get("message") || "");
+    const subject = encodeURIComponent(`New inquiry from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\n${message}`
+    );
+    window.location.href = `mailto:${RECIPIENT}?subject=${subject}&body=${body}`;
     setTimeout(() => {
       setLoading(false);
-      toast.success("Message sent! We'll be in touch shortly.");
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+      toast.success("Opening your email app to send the message.");
+      form.reset();
+    }, 600);
   };
 
   return (

@@ -11,7 +11,7 @@ interface Props {
   period?: string;
 }
 
-const ADMIN_EMAIL = "admin@s-b-p-multicorp.com";
+const ADMIN_EMAIL = "bjackson@s-p-b-multicorp.com";
 
 export default function PaymentDialog({ open, onOpenChange, packageName, price, period }: Props) {
   const { toast } = useToast();
