@@ -20,7 +20,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-2"><MapPin size={14} className="text-primary shrink-0" /> Oregon, United States</li>
               <li className="flex items-center gap-2"><Phone size={14} className="text-primary shrink-0" /> +1 (458) 272-5246</li>
-              <li className="flex items-center gap-2"><Mail size={14} className="text-primary shrink-0" /> spb-multicorp@outlook.com</li>
+              <li className="flex items-center gap-2"><Mail size={14} className="text-primary shrink-0" /> sstapleton@s-p-b-multicorp.com</li>
             </ul>
           </div>
           <div>
