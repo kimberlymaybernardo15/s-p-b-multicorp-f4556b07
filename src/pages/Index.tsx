@@ -15,6 +15,7 @@ export default function Index() {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+      <EcomBanner />
       <RoadmapSection />
       <MissionSection />
       <WhyChooseUsSection />
