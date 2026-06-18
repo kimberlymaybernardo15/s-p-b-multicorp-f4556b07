@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import EcomBanner from "@/components/EcomBanner";
 import RoadmapSection from "@/components/RoadmapSection";
 import MissionSection from "@/components/MissionSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
