@@ -20,6 +20,7 @@ export default function Index() {
       <RoadmapSection />
       <MissionSection />
       <WhyChooseUsSection />
+      <FeaturedProjectsSection />
       <HowItWorksSection />
       <PackagesSection />
       <LeadershipSection />
