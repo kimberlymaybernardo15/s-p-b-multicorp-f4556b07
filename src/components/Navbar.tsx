@@ -84,6 +84,16 @@ export default function Navbar() {
               {l.label}
             </button>
           ))}
+          <a
+            href="https://s-p-b-store.myshopify.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Shop S-P-B Ecom - opens in a new tab"
+            className="flex items-center gap-2 w-full px-5 py-2.5 rounded-lg border border-primary/40 text-primary font-heading text-sm font-semibold hover:bg-primary/10 transition-all duration-300"
+          >
+            <ShoppingCart size={16} aria-hidden="true" />
+            Shop
+          </a>
           <button onClick={() => scroll("packages")} className="w-full px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-heading text-sm font-semibold electric-glow">
             Get Started
           </button>
