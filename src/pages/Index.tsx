@@ -4,6 +4,7 @@ import EcomBanner from "@/components/EcomBanner";
 import RoadmapSection from "@/components/RoadmapSection";
 import MissionSection from "@/components/MissionSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
+import FeaturedProjectsSection from "@/components/FeaturedProjectsSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import PackagesSection from "@/components/PackagesSection";
 import LeadershipSection from "@/components/LeadershipSection";
@@ -19,6 +20,7 @@ export default function Index() {
       <RoadmapSection />
       <MissionSection />
       <WhyChooseUsSection />
+      <FeaturedProjectsSection />
       <HowItWorksSection />
       <PackagesSection />
       <LeadershipSection />
