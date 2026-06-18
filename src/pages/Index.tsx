@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import EcomBanner from "@/components/EcomBanner";
 import RoadmapSection from "@/components/RoadmapSection";
 import MissionSection from "@/components/MissionSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
@@ -14,6 +15,7 @@ export default function Index() {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+      <EcomBanner />
       <RoadmapSection />
       <MissionSection />
       <WhyChooseUsSection />
