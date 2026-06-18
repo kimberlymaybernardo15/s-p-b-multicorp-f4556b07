@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { Menu, X, Sun, Moon, ShoppingCart } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { useTheme } from "@/hooks/useTheme";
 
