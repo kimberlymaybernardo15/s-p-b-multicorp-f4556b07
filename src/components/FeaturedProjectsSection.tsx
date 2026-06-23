@@ -87,33 +87,45 @@ function ProjectCard({
   index: number;
 }) {
   const { ref, isVisible } = useScrollAnimation();
+  const isComingSoon = project.comingSoon;
 
   return (
     <article
       ref={ref}
       className={`glass-card p-8 electric-glow-hover transition-all duration-700 flex flex-col h-full ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+        isComingSoon ? "border-primary/20 bg-muted/20" : ""
+      } ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       style={{ transitionDelay: `${index * 0.1}s` }}
-      aria-label={`${project.name} project card`}
+      aria-label={`${project.name} project card${isComingSoon ? " - coming soon" : ""}`}
     >
       <div className="flex items-center gap-3 mb-5">
-        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-          <Globe className="text-primary" size={24} aria-hidden="true" />
+        <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${isComingSoon ? "bg-primary/5" : "bg-primary/10"}`}>
+          {isComingSoon ? (
+            <Clock className="text-primary/70" size={24} aria-hidden="true" />
+          ) : (
+            <Globe className="text-primary" size={24} aria-hidden="true" />
+          )}
         </div>
         <div>
           <h3 className="font-heading text-xl font-semibold text-foreground">
             {project.name}
           </h3>
-          <a
-            href={project.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Visit ${project.name} website - opens in a new tab`}
-            className="text-sm text-primary hover:underline transition-colors"
-          >
-            {project.website}
-          </a>
+          {isComingSoon ? (
+            <span className="inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-primary/80 uppercase">
+              <Sparkles size={12} aria-hidden="true" />
+              Coming Soon
+            </span>
+          ) : (
+            <a
+              href={project.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Visit ${project.name} website - opens in a new tab`}
+              className="text-sm text-primary hover:underline transition-colors"
+            >
+              {project.website}
+            </a>
+          )}
         </div>
       </div>
 
@@ -121,20 +133,27 @@ function ProjectCard({
         {project.description}
       </p>
 
-      <a
-        href={project.buttonLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`${project.buttonText} - ${project.name} - opens in a new tab`}
-        className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-xl bg-primary text-primary-foreground font-heading font-semibold text-sm electric-glow-hover transition-all duration-300 hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
-      >
-        {project.buttonText}
-        <ArrowUpRight
-          size={18}
-          aria-hidden="true"
-          className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-        />
-      </a>
+      {isComingSoon ? (
+        <span className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-xl bg-muted/40 border border-primary/20 text-muted-foreground font-heading font-semibold text-sm cursor-not-allowed">
+          {project.buttonText}
+          <Clock size={18} aria-hidden="true" />
+        </span>
+      ) : (
+        <a
+          href={project.buttonLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${project.buttonText} - ${project.name} - opens in a new tab`}
+          className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-xl bg-primary text-primary-foreground font-heading font-semibold text-sm electric-glow-hover transition-all duration-300 hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+        >
+          {project.buttonText}
+          <ArrowUpRight
+            size={18}
+            aria-hidden="true"
+            className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+          />
+        </a>
+      )}
     </article>
   );
 }
