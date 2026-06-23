@@ -1,4 +1,4 @@
-import { Globe, ArrowUpRight } from "lucide-react";
+import { Globe, ArrowUpRight, Clock, Sparkles } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 interface Project {
@@ -7,6 +7,7 @@ interface Project {
   description: string;
   buttonText: string;
   buttonLink: string;
+  comingSoon?: boolean;
 }
 
 const projects: Project[] = [
@@ -17,6 +18,24 @@ const projects: Project[] = [
       "SPB MultiCorp is a digital marketing and business solutions company focused on helping businesses improve visibility, automate operations, strengthen reputation, and accelerate growth through modern technology and AI-powered solutions.",
     buttonText: "View Project",
     buttonLink: "https://spb-multicorp.com",
+  },
+  {
+    name: "Project Coming Soon",
+    website: "#",
+    description:
+      "A new project is currently in development. Stay tuned for an exciting addition to our growing portfolio of digital marketing and business solutions.",
+    buttonText: "Coming Soon",
+    buttonLink: "#",
+    comingSoon: true,
+  },
+  {
+    name: "Project Coming Soon",
+    website: "#",
+    description:
+      "Another innovative project is on the way. We are working behind the scenes to deliver another high-impact solution for businesses like yours.",
+    buttonText: "Coming Soon",
+    buttonLink: "#",
+    comingSoon: true,
   },
 ];
 
