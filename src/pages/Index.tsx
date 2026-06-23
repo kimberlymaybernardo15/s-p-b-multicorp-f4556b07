@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import EcomBanner from "@/components/EcomBanner";
 import RoadmapSection from "@/components/RoadmapSection";
 import MissionSection from "@/components/MissionSection";
+import StandardsSection from "@/components/StandardsSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import FeaturedProjectsSection from "@/components/FeaturedProjectsSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
@@ -19,6 +20,7 @@ export default function Index() {
       <EcomBanner />
       <RoadmapSection />
       <MissionSection />
+      <StandardsSection />
       <WhyChooseUsSection />
       <FeaturedProjectsSection />
       <HowItWorksSection />
