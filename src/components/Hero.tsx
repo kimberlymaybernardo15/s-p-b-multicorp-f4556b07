@@ -1,4 +1,5 @@
 import heroBg from "@/assets/hero-bg.jpg";
+import HeroNetworkAnimation from "./HeroNetworkAnimation";
 
 export default function Hero() {
   const scroll = (id: string) =>
@@ -8,6 +9,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img src={heroBg} alt="Oregon wilderness with Advanced overlays" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220_13%_10%/0.7)] via-[hsl(220_13%_10%/0.5)] to-background" />
+      <HeroNetworkAnimation />
 
       <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">
         <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight mb-6 animate-fade-up">
