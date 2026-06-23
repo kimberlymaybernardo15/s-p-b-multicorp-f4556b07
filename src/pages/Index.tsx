@@ -20,6 +20,7 @@ export default function Index() {
       <EcomBanner />
       <RoadmapSection />
       <MissionSection />
+      <StandardsSection />
       <WhyChooseUsSection />
       <FeaturedProjectsSection />
       <HowItWorksSection />
