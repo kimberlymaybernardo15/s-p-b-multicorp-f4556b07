@@ -43,7 +43,7 @@ export default function RoadmapSection() {
       <div className="section-divider mb-24" />
       <div className="container mx-auto px-6">
         <SectionHeading title="Digital Growth Roadmap" subtitle="Five pillars powering your market dominance" />
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {pillars.map((p, i) => (
             <Pillar key={p.title} {...p} delay={`${i * 0.15}s`} />
           ))}
