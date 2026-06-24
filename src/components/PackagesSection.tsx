@@ -125,23 +125,6 @@ const websiteDevPackages: WebsiteDevPackage[] = [
   { pages: "51+ Pages", price: "$30,000+" },
 ];
 
-const comparisonRows: { label: string; values: (boolean | string)[] }[] = [
-  { label: "Website Included", values: [true, true, false, true, true] },
-  { label: "SEO Included", values: [true, true, true, false, true] },
-  { label: "GEO Included", values: [false, true, true, false, false] },
-  { label: "Monthly Optimization", values: [true, true, true, false, false] },
-  {
-    label: "Best For",
-    values: [
-      "New Businesses",
-      "Growing Businesses",
-      "Established Sites",
-      "Beginners",
-      "Search-Focused",
-    ],
-  },
-];
-
 export default function PackagesSection() {
   const { ref, isVisible } = useScrollAnimation();
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -195,49 +178,6 @@ export default function PackagesSection() {
           ))}
         </div>
 
-        {/* Comparison Table */}
-        <div className="max-w-6xl mx-auto mb-20">
-          <h3 className="font-heading text-2xl md:text-3xl font-bold text-center metal-text mb-8">
-            Compare Packages
-          </h3>
-          <div className="glass-card overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-border">
-                  <th className="text-left p-4 font-heading text-muted-foreground font-semibold">Feature</th>
-                  {packages.map((p) => (
-                    <th
-                      key={p.name}
-                      className={`text-center p-4 font-heading font-semibold ${p.highlighted ? "text-primary" : "text-foreground"}`}
-                    >
-                      {p.name}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {comparisonRows.map((row) => (
-                  <tr key={row.label} className="border-b border-border/50 last:border-0">
-                    <td className="p-4 font-medium text-foreground">{row.label}</td>
-                    {row.values.map((v, idx) => (
-                      <td key={idx} className="p-4 text-center">
-                        {typeof v === "boolean" ? (
-                          v ? (
-                            <Check size={18} className="text-primary mx-auto" />
-                          ) : (
-                            <X size={18} className="text-muted-foreground/40 mx-auto" />
-                          )
-                        ) : (
-                          <span className="text-muted-foreground text-xs">{v}</span>
-                        )}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
 
         {/* Website Development Packages */}
         <div className="max-w-6xl mx-auto mb-20">
