@@ -125,23 +125,6 @@ const websiteDevPackages: WebsiteDevPackage[] = [
   { pages: "51+ Pages", price: "$30,000+" },
 ];
 
-const comparisonRows: { label: string; values: (boolean | string)[] }[] = [
-  { label: "Website Included", values: [true, true, false, true, true] },
-  { label: "SEO Included", values: [true, true, true, false, true] },
-  { label: "GEO Included", values: [false, true, true, false, false] },
-  { label: "Monthly Optimization", values: [true, true, true, false, false] },
-  {
-    label: "Best For",
-    values: [
-      "New Businesses",
-      "Growing Businesses",
-      "Established Sites",
-      "Beginners",
-      "Search-Focused",
-    ],
-  },
-];
-
 export default function PackagesSection() {
   const { ref, isVisible } = useScrollAnimation();
   const [dialogOpen, setDialogOpen] = useState(false);
