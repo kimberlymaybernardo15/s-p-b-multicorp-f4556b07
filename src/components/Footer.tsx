@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer className="border-t border-border py-12">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div>
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <img src={logo} alt="S-P-B MultiCorp Logo" className="w-8 h-8 object-contain" />
               <h4 className="font-heading text-lg font-semibold metal-text">S-P-B MultiCorp</h4>
@@ -42,6 +42,21 @@ export default function Footer() {
                   </button>
                 </li>
               ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-heading text-sm font-semibold text-foreground mb-4">Legal</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="/privacy-policy" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/terms-and-conditions" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Terms & Conditions
+                </a>
+              </li>
             </ul>
           </div>
         </div>
