@@ -20,13 +20,12 @@ const projects: Project[] = [
     buttonLink: "https://spb-multicorp.com",
   },
   {
-    name: "Project Coming Soon",
-    website: "#",
+    name: "DeWolfe & Sons Moving",
+    website: "https://dewolfeandsonsmoving.online",
     description:
-      "A new project is currently in development. Stay tuned for an exciting addition to our growing portfolio of digital marketing and business solutions.",
-    buttonText: "Coming Soon",
-    buttonLink: "#",
-    comingSoon: true,
+      "DeWolfe & Sons Moving is a licensed, family-focused moving company built to earn trust and deliver reliable, stress-free relocations for homes and businesses.",
+    buttonText: "View Project",
+    buttonLink: "https://dewolfeandsonsmoving.online",
   },
   {
     name: "Project Coming Soon",
