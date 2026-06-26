@@ -27,6 +27,15 @@ const projects: Project[] = [
     buttonText: "View Project",
     buttonLink: "https://dewolfeandsonsmoving.online",
   },
+  {
+    name: "Project in Progress",
+    website: "#",
+    description:
+      "A new client project is currently under development. We are building another tailored digital presence and marketing solution from the ground up.",
+    buttonText: "In Progress",
+    buttonLink: "#",
+    comingSoon: true,
+  },
 ];
 
 export default function FeaturedProjectsSection() {
