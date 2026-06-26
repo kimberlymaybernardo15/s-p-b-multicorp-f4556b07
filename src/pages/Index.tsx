@@ -5,6 +5,7 @@ import RoadmapSection from "@/components/RoadmapSection";
 import MissionSection from "@/components/MissionSection";
 import StandardsSection from "@/components/StandardsSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import FeaturedProjectsSection from "@/components/FeaturedProjectsSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import PackagesSection from "@/components/PackagesSection";
@@ -22,6 +23,7 @@ export default function Index() {
       <MissionSection />
       <StandardsSection />
       <WhyChooseUsSection />
+      <TestimonialsSection />
       <FeaturedProjectsSection />
       <HowItWorksSection />
       <PackagesSection />
