@@ -27,15 +27,6 @@ const projects: Project[] = [
     buttonText: "View Project",
     buttonLink: "https://dewolfeandsonsmoving.online",
   },
-  {
-    name: "Project Coming Soon",
-    website: "#",
-    description:
-      "Another innovative project is on the way. We are working behind the scenes to deliver another high-impact solution for businesses like yours.",
-    buttonText: "Coming Soon",
-    buttonLink: "#",
-    comingSoon: true,
-  },
 ];
 
 export default function FeaturedProjectsSection() {
