@@ -35,8 +35,8 @@ export default function ContactSection() {
       <div className="container mx-auto px-6 max-w-2xl">
         <div ref={ref} className={`transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-5xl font-bold metal-text mb-4">Get In Touch</h2>
-            <p className="text-muted-foreground text-lg">Ready to dominate your market? Let's talk.</p>
+            <h2 className="font-heading text-3xl md:text-5xl font-bold metal-text mb-4">Talk With Our Team</h2>
+            <p className="text-muted-foreground text-lg">What would greater efficiency mean for your business? Tell us where you're stuck — we'll show you a practical path forward.</p>
           </div>
 
           <form onSubmit={handleSubmit} className="glass-card p-8 space-y-6">
