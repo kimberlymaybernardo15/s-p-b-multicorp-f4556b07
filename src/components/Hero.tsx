@@ -12,18 +12,19 @@ export default function Hero() {
       <HeroNetworkAnimation />
 
       <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">
+        <p className="text-primary font-heading text-sm font-semibold tracking-widest uppercase mb-4 animate-fade-up">Practical Solutions for Growing Businesses</p>
         <h1 className="font-heading text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight mb-6 animate-fade-up">
-          The Future of Lead Generation
+          Is your business ready for the next stage of growth?
         </h1>
         <p className="text-lg md:text-xl text-[hsl(220_10%_85%)] max-w-2xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: "0.15s" }}>
-          Bridging the gap between traditional SEO and 2026 Advanced search behavior through Generative Engine Optimization (GEO).
+          SPB MultiCorp helps companies streamline operations, strengthen customer relationships, and turn inefficiencies into opportunities — with clear strategy and dependable execution.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
           <button onClick={() => scroll("contact")} className="px-8 py-4 rounded-lg bg-primary text-primary-foreground font-heading font-semibold text-base electric-glow electric-glow-hover">
-            Get a Digital Audit
+            Discover Business Solutions
           </button>
-          <button onClick={() => scroll("packages")} className="metal-btn px-8 py-4 rounded-lg text-foreground font-heading font-semibold text-base">
-            See Packages
+          <button onClick={() => scroll("why-choose-us")} className="metal-btn px-8 py-4 rounded-lg text-foreground font-heading font-semibold text-base">
+            Explore Growth Opportunities
           </button>
         </div>
       </div>
